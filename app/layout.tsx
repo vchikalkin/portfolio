@@ -1,7 +1,8 @@
+import { cn } from '@/lib/utils';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
-import { Inter } from 'next/font/google';
 import './globals.css';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
 
@@ -15,7 +16,10 @@ export default async function RootLayout({ children }: { readonly children: Reac
   return (
     <html lang={locale}>
       <body
-        className={`${inter.className} mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 antialiased sm:py-24`}
+        className={cn(
+          inter.className,
+          'mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 antialiased sm:py-24',
+        )}
       >
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
