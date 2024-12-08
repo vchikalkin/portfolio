@@ -1,6 +1,6 @@
-import { About } from './components/about';
-import { Person } from './components/person';
-import { Work } from './components/work';
+import { About } from '@/components/about';
+import { Person } from '@/components/person';
+import { Work } from '@/components/work';
 
 export default function HomePage() {
   return (
