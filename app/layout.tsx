@@ -14,7 +14,9 @@ export default async function RootLayout({ children }: { readonly children: Reac
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 antialiased sm:py-24`}
+      >
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>

@@ -1,10 +1,11 @@
-import { useTranslations } from 'next-intl';
+import { About } from './components/about';
+import { Person } from './components/person';
 
 export default function HomePage() {
-  const t = useTranslations('HomePage');
   return (
-    <div>
-      <h1 className="text-4xl font-semibold tracking-tight ">{t('title')}</h1>
-    </div>
+    <main className="flex min-h-dvh flex-col space-y-10">
+      <Person />
+      <About />
+    </main>
   );
 }
