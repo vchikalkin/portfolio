@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 const skills = [
   'React',
   'Next.js',
-  'Typescript',
+  'TypeScript',
   'GraphQL',
   'ESLint',
   'Tailwind',
