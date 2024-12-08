@@ -13,9 +13,10 @@ export default [
       '@next/next/no-duplicate-head': 'off',
       'import/extensions': [
         'error',
-        'ignorePackages',
+        'never',
         {
           css: 'always',
+          json: 'always',
         },
       ],
       'prettier/prettier': [
