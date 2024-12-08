@@ -1,5 +1,6 @@
 import { About } from '@/components/about';
 import { Person } from '@/components/person';
+import { Skills } from '@/components/skills';
 import { Work } from '@/components/work';
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Person />
       <About />
       <Work />
+      <Skills />
     </main>
   );
 }
