@@ -7,13 +7,13 @@ import { Work } from '@/components/work';
 import { type Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-type Parameters = {
-  params: {
-    locale: string;
-  };
+type PageProps = {
+  params: Promise<{ id: string; locale: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export async function generateMetadata({ params: { locale } }: Parameters): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'HomePage' });
 
   return {
