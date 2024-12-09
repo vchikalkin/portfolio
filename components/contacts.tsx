@@ -4,24 +4,35 @@ import Image, { type StaticImageData } from 'next/image';
 
 type ContactType = {
   readonly href: string;
-  readonly image: StaticImageData;
+  readonly image: {
+    className?: string;
+    src: StaticImageData;
+  };
   readonly title: string;
 };
 
 const contacts: ContactType[] = [
   {
     href: 'https://t.me/vchikalkin',
-    image: icons.Telegram,
+    image: {
+      src: icons.Telegram,
+    },
     title: 'Telegram',
   },
   {
     href: 'https://github.com/vchikalkin',
-    image: icons.Github,
+    image: {
+      className: 'dark:invert',
+      src: icons.Github,
+    },
     title: 'GitHub',
   },
   {
     href: 'mailto:i@vchikalkin.ru',
-    image: icons.Email,
+    image: {
+      className: 'dark:invert',
+      src: icons.Email,
+    },
     title: 'Email',
   },
 ];
@@ -48,7 +59,7 @@ function Contact({ href, image, title }: ContactType) {
     <div>
       <a href={href}>
         <div className="flex items-center gap-x-1">
-          <Image alt={title} height={24} src={image} width={24} />
+          <Image alt={title} height={24} width={24} {...image} />
           <h3 className="text-sm font-medium leading-none">{title}</h3>
         </div>
       </a>
