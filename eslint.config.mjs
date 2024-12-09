@@ -41,6 +41,7 @@ export default [
         },
         { usePrettierrc: false },
       ],
+      'react/forbid-component-props': 0,
     },
   },
 ];

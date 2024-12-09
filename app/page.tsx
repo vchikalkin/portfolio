@@ -24,7 +24,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default function HomePage() {
   return (
     <main>
-      <NeonGradientCard neonColors={{ firstColor: '#ae00ff2b', secondColor: '#0011ff55' }}>
+      <NeonGradientCard
+        className="max-sm:min-h-screen"
+        neonColors={{ firstColor: '#ae00ff2b', secondColor: '#0011ff55' }}
+      >
         <div className="flex flex-col justify-between gap-y-5">
           <Person />
           <About />
