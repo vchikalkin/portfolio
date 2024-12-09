@@ -25,7 +25,7 @@ export default function HomePage() {
   return (
     <main className="">
       <NeonGradientCard neonColors={{ firstColor: '#ae00ff2b', secondColor: '#0011ff55' }}>
-        <div className="flex flex-col justify-between gap-y-5 bg-white/30 backdrop-blur-sm ">
+        <div className="flex flex-col justify-between gap-y-5">
           <Person />
           <About />
           <Work />
