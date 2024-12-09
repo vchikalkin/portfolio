@@ -3,3 +3,14 @@ services:
     build: .
     ports:
       - "3000:3000"
+    labels:
+      - "traefik.http.routers.portfolio.rule=Host(`vchikalkin.dev`)"  # Замените на ваш домен
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls=true"
+      - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
