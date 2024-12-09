@@ -23,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: Parameters): Prom
 
 export default function HomePage() {
   return (
-    <main className="">
+    <main>
       <NeonGradientCard neonColors={{ firstColor: '#ae00ff2b', secondColor: '#0011ff55' }}>
         <div className="flex flex-col justify-between gap-y-5">
           <Person />

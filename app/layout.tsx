@@ -1,7 +1,8 @@
+import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
 import './globals.css';
+import { getLocale, getMessages } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
@@ -21,7 +22,17 @@ export default async function RootLayout({ children }: { readonly children: Reac
           'mx-auto min-h-screen max-w-2xl bg-background px-6 py-12 antialiased sm:py-24',
         )}
       >
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            disableTransitionOnChange
+            enableSystem
+            // forcedTheme="dark"
+          >
+            {children}
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

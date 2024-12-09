@@ -11,6 +11,7 @@ export default [
     ignores: ['**/.next/**'],
     rules: {
       '@next/next/no-duplicate-head': 'off',
+      'canonical/filename-match-regex': 0,
       'import/extensions': [
         'error',
         'never',
