@@ -35,6 +35,13 @@ const contacts: ContactType[] = [
     },
     title: 'Email',
   },
+  {
+    href: 'https://www.instagram.com/v.chikalkin/',
+    image: {
+      src: icons.Instagram,
+    },
+    title: 'Instagram',
+  },
 ];
 
 export function Contacts() {
