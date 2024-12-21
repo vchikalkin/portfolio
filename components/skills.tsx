@@ -14,6 +14,7 @@ const skills = [
   'MongoDB',
   'Redis',
   'JWT',
+  'CI/CD',
 ];
 
 export function Skills() {
