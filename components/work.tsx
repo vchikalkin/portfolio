@@ -12,6 +12,12 @@ export function Work() {
 
   const companies: CompanyProps[] = [
     {
+      description: t('sovcombanktech.description'),
+      href: 'https://sovcombank.it/',
+      period: t('sovcombanktech.period'),
+      title: t('sovcombanktech.title'),
+    },
+    {
       description: t('evolution.description'),
       href: 'https://evoleasing.ru/',
       period: t('evolution.period'),
