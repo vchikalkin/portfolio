@@ -42,6 +42,13 @@ const contacts: ContactType[] = [
     },
     title: 'Instagram',
   },
+  {
+    href: 'https://soundcloud.com/vchika',
+    image: {
+      src: icons.Soundcloud,
+    },
+    title: 'SoundCloud',
+  },
 ];
 
 export function Contacts() {
