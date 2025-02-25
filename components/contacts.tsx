@@ -58,7 +58,7 @@ export function Contacts() {
     <section id="contact">
       <div className="flex min-h-0 flex-col gap-y-3">
         <h2 className="text-xl font-bold">{t('title')}</h2>
-        <div className="flex items-center gap-x-6">
+        <div className="grid grid-cols-3 gap-2 gap-y-3">
           {contacts.map((contact) => (
             <Contact key={contact.title} {...contact} />
           ))}
