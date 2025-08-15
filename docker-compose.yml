@@ -1,6 +1,6 @@
 services:
   portfolio:
-    image: vchikalkin/portfolio:latest
+    image: ${DOCKERHUB_USERNAME}/portfolio:${PORTFOLIO_IMAGE_TAG}
     networks:
       - web
 
