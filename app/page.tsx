@@ -1,6 +1,7 @@
 import { About } from '@/components/about';
 import { Contacts } from '@/components/contacts';
 import { Person } from '@/components/person';
+import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { NeonGradientCard } from '@/components/ui/neon-gradient-card';
 import { Work } from '@/components/work';
@@ -32,6 +33,7 @@ export default function HomePage() {
           <Person />
           <About />
           <Work />
+          <Projects />
           <Skills />
           <Contacts />
         </div>

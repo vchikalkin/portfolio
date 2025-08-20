@@ -31,6 +31,25 @@
   "Skills": {
     "title": "Стэк"
   },
+  "Projects": {
+    "title": "Проекты",
+    "next_downloader_bot": {
+      "title": "Next Downloader Bot",
+      "description": "Telegram бот для скачивания видео с TikTok. Позволяет пользователям легко загружать видео одним сообщением."
+    },
+    "zapishis_online_bot": {
+      "title": "Запишись.online",
+      "description": "Встроенное в Telegram мобильное приложение для мастеров и клиентов. Включает запись на услуги, управление графиком работы и систему уведомлений."
+    },
+    "portfolio": {
+      "title": "Портфолио",
+      "description": "Персональный сайт-портфолио с современным дизайном, адаптивной версткой и поддержкой интернационализации."
+    },
+    "eslint_config": {
+      "title": "ESLint Config Awesome",
+      "description": "Конфигурация ESLint с профилями для Next.js, React, TypeScript и Node.js. Используется во всех проектах для обеспечения качества кода."
+    }
+  },
   "Contact": {
     "title": "Контакты"
   }

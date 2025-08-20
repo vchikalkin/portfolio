@@ -9,5 +9,8 @@ export default [
   ...awesome['react-typescript'],
   {
     ignores: ['**/.next/**'],
+    rules: {
+      'react/forbid-component-props': 'off',
+    },
   },
 ];
