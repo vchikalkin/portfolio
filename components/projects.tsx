@@ -28,7 +28,7 @@ export function Projects() {
     {
       description: t('portfolio.description'),
       href: 'https://vchikalkin.dev',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'next-intl'],
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'i18n', 'Dark/Light Theme'],
       title: t('portfolio.title'),
     },
     {
