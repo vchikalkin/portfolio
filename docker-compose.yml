@@ -1,6 +1,11 @@
 services:
   portfolio:
     image: ${DOCKERHUB_USERNAME}/portfolio:${PORTFOLIO_IMAGE_TAG}
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:3000/']
+      interval: 10s
+      timeout: 3s
+      retries: 5
     networks:
       - web
 
