@@ -19,7 +19,7 @@ export function Projects() {
         'Next.js',
         'Strapi',
         'PostgreSQL',
-        'Telegraf.js',
+        'Grammy.js',
         'Tailwind CSS',
         'Telegram Mini App',
       ],
