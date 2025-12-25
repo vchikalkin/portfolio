@@ -1,4 +1,3 @@
-import { About } from '@/components/about';
 import { Contacts } from '@/components/contacts';
 import { Person } from '@/components/person';
 import { Projects } from '@/components/projects';
@@ -31,7 +30,7 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-between gap-y-5">
           <Person />
-          <About />
+          {/* <About /> */}
           <Work />
           <Projects />
           <Skills />
