@@ -14,6 +14,7 @@ const skills = [
   'MongoDB',
   'Redis',
   'JWT',
+  'n8n',
   'CI/CD',
 ];
 
